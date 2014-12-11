@@ -1,0 +1,10 @@
+# Site settings
+title: AppADay
+description: "An app a day keeps the FOMO away."
+url: "http://appaday.github.io"
+author: "Thomas Meagher"
+keywords: "app,curated"
+
+exclude: ["readme.md"]
+include: []
+timezone: America/New_York
