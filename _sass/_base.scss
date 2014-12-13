@@ -1,0 +1,38 @@
+// modules: base
+
+body {
+  @include center;
+}
+
+.john {
+  @include inline;
+  font-size: 35px;
+  border-color: #eae9e8;
+  border-radius: 3px;
+  border-style: solid;
+  padding-left: 12px
+}
+
+.sub {
+  @include inline;
+}
+
+.button {
+  border-radius: 18px;
+  border-style: solid;
+  padding: 6px 20px;
+}
+
+.list-inline {
+  ul {
+    list-style: none;
+    margin-left: -2.4375rem;
+
+    li {
+      @include inline;
+      margin-top: .75rem;
+      padding-right: .4375rem;
+      padding-left: .4375rem;
+    }
+  }
+}

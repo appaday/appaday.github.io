@@ -1,8 +1,8 @@
 # Site settings
 title: AppADay
 description: "An app a day keeps the FOMO away."
-url: "http://appaday.github.io"
-author: "Thomas Meagher"
+url: "http://appaday.co"
+author: "Johnny Appleseed"
 keywords: "app,curated"
 
 exclude: ["readme.md"]
