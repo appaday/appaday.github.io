@@ -5,6 +5,6 @@ url: "http://appaday.co"
 author: "Johnny Appleseed"
 keywords: "app,curated"
 
-exclude: ["readme.md"]
+exclude: ["readme.md","CNAME"]
 include: []
 timezone: America/New_York
