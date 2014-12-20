@@ -15,6 +15,13 @@ a {
   }
 }
 
+hr {
+  color: $gray;
+  max-width: 600px;
+  margin: 8rem auto 2rem;
+  border: 1px solid $gray;
+}
+
 .list-inline {
   ul {
     list-style: none;
@@ -32,22 +39,24 @@ a {
 // HEADER
 
 .header {
-  margin: 1rem 0 5rem;
+  margin: 1rem 0 4rem;
 }
 
 .title {
   @include inline;
   color: $red;
-  margin: 0.67em 0 .25em;
+  margin: 0.67em 0 0;
 }
 
 .tag {
   @include inline;
   font-size: 2rem;
+  margin: 0.25rem 0 0;
 }
 
 .fomo {
   color: $dark-gray;
+  text-decoration: none;
   border-bottom: 1px dotted $dark-gray;
 
   &:hover {
@@ -75,6 +84,10 @@ a {
 }
 
 // SIGNUP
+
+.signup {
+  margin: 1rem 0 3rem;
+}
 
 .form {
   background-color: $gray;
@@ -126,5 +139,31 @@ a {
 
 .past {
   clear: both;
+  font-size: 1.5rem;
   margin: 10px 0 0;
+}
+
+// NUTRITION FACTS
+
+.facts {
+  margin: 1rem 0 1rem;
+}
+
+.fact {
+  margin: 0 0 3rem;
+}
+
+.number {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.lines {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+// FOOTER
+.footer {
+  margin: 2rem 0 2rem;
 }
