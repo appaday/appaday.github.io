@@ -4,14 +4,19 @@ body {
   @include center;
   background-color: $background;
   color: $dark-gray;
-  // Add font
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+
+  @media #{$mobile} {
+    font-size: 14px;
+  }
 }
 
 a {
   color: $red;
 
   &:hover {
-    color: $dark-red;
+    color: $red;
   }
 }
 
@@ -56,8 +61,7 @@ hr {
 
 .fomo {
   color: $dark-gray;
-  text-decoration: none;
-  border-bottom: 1px dotted $dark-gray;
+  border-bottom: 1.5px dotted $dark-gray;
 
   &:hover {
     color: $dark-gray;
@@ -143,6 +147,10 @@ hr {
   margin: 10px 0 0;
 }
 
+.fa-long-arrow-right {
+  padding-left: 0.5rem;
+}
+
 // NUTRITION FACTS
 
 .facts {
@@ -166,4 +174,16 @@ hr {
 // FOOTER
 .footer {
   margin: 2rem 0 2rem;
+}
+
+.footer-link {
+  margin: 1rem 0 1rem;
+}
+
+.fa-twitter {
+  padding-right: 0.5rem;
+}
+
+.fa-envelope {
+  padding-right: 0.5rem;
 }
