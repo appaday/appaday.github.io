@@ -2,28 +2,78 @@
 
 body {
   @include center;
+  background-color: $background;
+  color: $dark-gray;
+  // Add font
 }
 
-.john {
+a {
+  color: $red;
+
+  &:hover {
+    color: $dark-red;
+  }
+}
+
+.title {
   @include inline;
-  font-size: 35px;
-  border-color: #eae9e8;
+  color: $red;
+}
+
+.tag {
+  @include inline;
+}
+
+.form {
+  background-color: $gray;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 5px;
+  padding: 1.4rem 1.5rem;
+}
+
+.sub-form {
+  height: 50px;
+  max-width: 525px;
+  margin: auto;
+}
+
+.email {
+  @include inline;
+  float: left;
+  font-size: 2rem;
+  width: 65%;
   border-radius: 3px;
-  border-style: solid;
-  padding-left: 12px
-}
-
-.sub {
-  @include inline;
+  border: 0;
+  box-shadow: inset 0px 1px 2px 0px #cdcdcd,inset 0px 0px 0px 1px #dddddd;
+  padding: 8px 12px;
+  outline: 0;
 }
 
 .button {
+  @include inline;
+  float: right;
+  width: 30%;
+  background-color: $red;
+  color: $white;
   border-radius: 18px;
-  border-style: solid;
-  padding: 6px 20px;
-  background-color: #C0392B;
-  border-color: #C0392B;
-  color: #ffffff;
+  border: 3px solid $red;
+  padding: 8px 20px;
+
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    border-color: $dark-red;
+    box-shadow: 0px 0px 8px $dark-red;
+  }
+}
+
+.past {
+  clear: both;
+  margin: 10px 0 0;
 }
 
 .list-inline {
