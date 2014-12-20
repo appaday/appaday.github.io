@@ -15,26 +15,78 @@ a {
   }
 }
 
+.list-inline {
+  ul {
+    list-style: none;
+    margin-left: -2.4375rem;
+
+    li {
+      @include inline;
+      margin-top: .75rem;
+      padding-right: .4375rem;
+      padding-left: .4375rem;
+    }
+  }
+}
+
+// HEADER
+
+.header {
+  margin: 1rem 0 5rem;
+}
+
 .title {
   @include inline;
   color: $red;
+  margin: 0.67em 0 .25em;
 }
 
 .tag {
   @include inline;
+  font-size: 2rem;
 }
+
+.fomo {
+  color: $dark-gray;
+  border-bottom: 1px dotted $dark-gray;
+
+  &:hover {
+    color: $dark-gray;
+    position: relative;
+    text-decoration: none;
+  }
+
+  &[title]:hover:after {
+    content: attr(title);
+    background-color: $gray;
+    color: #333;
+    font-size: 1.5rem;
+    position: absolute;
+    margin: 8px 0 0;
+    right: 0;
+    top: 100%;
+    z-index: 20;
+    white-space: nowrap;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 4px 8px;
+  }
+}
+
+// SIGNUP
 
 .form {
   background-color: $gray;
   max-width: 600px;
   margin: auto;
   border-radius: 5px;
-  padding: 1.4rem 1.5rem;
+  padding: 1.4rem 1.4rem;
 }
 
 .sub-form {
   height: 50px;
-  max-width: 525px;
+  max-width: 535px;
   margin: auto;
 }
 
@@ -42,6 +94,7 @@ a {
   @include inline;
   float: left;
   font-size: 2rem;
+  height: 42px;
   width: 65%;
   border-radius: 3px;
   border: 0;
@@ -58,7 +111,7 @@ a {
   color: $white;
   border-radius: 18px;
   border: 3px solid $red;
-  padding: 8px 20px;
+  padding: 8px 0;
 
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -74,18 +127,4 @@ a {
 .past {
   clear: both;
   margin: 10px 0 0;
-}
-
-.list-inline {
-  ul {
-    list-style: none;
-    margin-left: -2.4375rem;
-
-    li {
-      @include inline;
-      margin-top: .75rem;
-      padding-right: .4375rem;
-      padding-left: .4375rem;
-    }
-  }
 }
