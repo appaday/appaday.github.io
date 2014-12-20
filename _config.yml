@@ -1,10 +1,10 @@
 # Site settings
 title: AppADay
-description: "An app a day keeps the FOMO away."
+description: "An app a day keeps the FOMO away. Recieve a hand-picked app in your inbox, everyday."
 url: "http://appaday.co"
-author: "Johnny Appleseed"
-keywords: "app,curated"
+author: "Tom Meagher"
+keywords: "app,curated,iOS,technology"
 
-exclude: ["readme.md","CNAME"]
+exclude: ["readme.md","CNAME","img/icon.sketch","img/icon.png"]
 include: []
 timezone: America/New_York

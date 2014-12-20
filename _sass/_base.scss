@@ -97,6 +97,8 @@ hr {
   background-color: $gray;
   max-width: 600px;
   margin: auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 1.4rem 1.4rem;
 }
@@ -113,6 +115,8 @@ hr {
   font-size: 2rem;
   height: 42px;
   width: 65%;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 0;
   box-shadow: inset 0px 1px 2px 0px #cdcdcd,inset 0px 0px 0px 1px #dddddd;
@@ -126,6 +130,8 @@ hr {
   width: 30%;
   background-color: $red;
   color: $white;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
   border-radius: 18px;
   border: 3px solid $red;
   padding: 8px 0;
