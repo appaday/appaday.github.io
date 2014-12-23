@@ -1,3 +1,23 @@
 // modules: 404
 
-.main {}
+.main {
+  @include center;
+
+  margin: 17rem 0 1rem;
+  @media #{$mobile} {
+    margin: 5rem 0 1rem;
+  }
+}
+
+.oops {
+  margin: 1rem 0;
+  font-size: 4rem;
+}
+
+.fa-long-arrow-left {
+  padding-right: 0.5rem;
+}
+
+.rewind {
+  font-size: 2rem;
+}
